@@ -1,5 +1,5 @@
 create table user (
-	email Varchar(264) Not Null Primary Key,
+	username Varchar(264) Not Null Primary Key,
     password Varchar(64) Not null,
     access integer(1)
 );
