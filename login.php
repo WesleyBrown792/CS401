@@ -2,23 +2,14 @@
 
 session_start();
 
-
-
-$con = sysqli_connect('localhost','root','sacredheartsclub');
-
-mysqli_select_db($con, 'test');
-
+$dao = new Dao();
 $name = $_POST['user'];
 $pass = $_POST['password'];
-$acc = 0;
 
-$s = "select * from user where name = '$name' && password = '$pass'";
 
-$result = mysqli_query($con. $s);
+$exists = $dao->login($name, $pass);
 
-$num =  mysqli_num_rows($result);
-
-if($num == 1){
+if($exists != null){
     header('location:Home.php');
 }else{
     header('location:index.php');
