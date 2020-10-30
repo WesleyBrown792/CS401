@@ -8,9 +8,9 @@
     <div class="container">
         <div class login box>
         <div class="row">
-            <div class="col-md-6 login-left">
+            <div class="login-left">
                 <h2> Login Here </h2>
-                <form action="login.php" method="post">
+                <form method="POST" action="login.php">
                     <div class="form-group">
                         <label>Username</lable>
                         <input type="text" name="user" class="form-control" >
@@ -19,9 +19,9 @@
                         <label>Password</lable>
                         <input type="password" name="pass" class="form-control" >
                     </div>
-                    <button type="submit"> Login </button>
+                    <input type="submit" value="Login">
             </div>
-            <div class="col-md-6 login-right">
+            <div class="login-right">
                 <h2> Register Here </h2>
                 <form action="registration.php" method="post">
                     <div class="form-group">
@@ -32,7 +32,7 @@
                         <label>Password</lable>
                         <input type="password" name="pass" class="form-control" >
                     </div>
-                    <button type="submit"> Register </button>
+                    <input type="submit" value="Register">
             </div>
         </div>
         </div>
