@@ -19,7 +19,7 @@
                         <label>Password</lable>
                         <input type="password" name="pass" class="form-control" >
                     </div>
-                    <button type="submit" class="btn btn-primary"> Login </button>
+                    <button type="submit"> Login </button>
             </div>
             <div class="col-md-6 login-right">
                 <h2> Register Here </h2>
@@ -32,7 +32,7 @@
                         <label>Password</lable>
                         <input type="password" name="pass" class="form-control" >
                     </div>
-                    <button type="submit" class="btn btn-primary"> Register </button>
+                    <button type="submit"> Register </button>
             </div>
         </div>
         </div>

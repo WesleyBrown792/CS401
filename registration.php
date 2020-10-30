@@ -19,7 +19,6 @@ $result = mysqli_query($con. $s);
 $num =  mysqli_num_rows($result);
 
 if($num == 1){
-    echo "username taken";
 }else{
     $reg= "inset into user (name, password, access) values ('$name', '$pass', '$acc')";
     mysqli_query($con, $reg);
