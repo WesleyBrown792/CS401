@@ -1,3 +1,6 @@
+<?php
+require_once 'table.php';
+?>
 
 <html>
     <header>
@@ -34,54 +37,23 @@
         <div>
             <div>
                 <h2>Most Recently Reviewed</h2>
-                <table>
-                    <thead><th>URL</th><th>Total Score</th></thead>
-
-                  </table> 
+                <?php
+                renderTime("WebsiteList");
+                ?>
             </div>
              
             <div>
                 <h2>Best Sites</h2>
-                <table style="width:100%">
-                    <tr>
-                      <th>URL</th>
-                      <th>Total Score</th>
-                      <th>P1 Score</th>
-                      <th>P2 Score</th>
-                      <th>P3 Score</th>
-                      <th>P4 Score</th>
-                    </tr>
-                    <tr>
-                      <td>Example URL</td>
-                      <td>200</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                    </tr>
-                  </table>
+                <?php
+                renderBest("WebsiteList");
+                ?>
             </div>
 
             <div>
                 <h2>Worst Sites</h2>
-                <table style="width:100%">
-                    <tr>
-                      <th>URL</th>
-                      <th>Total Score</th>
-                      <th>P1 Score</th>
-                      <th>P2 Score</th>
-                      <th>P3 Score</th>
-                      <th>P4 Score</th>
-                    </tr>
-                    <tr>
-                      <td>Example URL</td>
-                      <td>200</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                    </tr>
-                  </table> 
+                <?php
+                 renderWorst("WebsiteList");
+                 ?>
             </div>
         
         </div>

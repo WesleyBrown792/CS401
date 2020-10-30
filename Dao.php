@@ -52,5 +52,20 @@
             $conn = $this->getConnection();
             return $conn->query("select * from WebsiteList");
         }
+
+        public function getWorst(){
+            $conn = $this->getConnection();
+            return $conn->query("select * from WebsiteList orderby totalS DESC");
+        }
+
+        public function getBest(){
+            $conn = $this->getConnection();
+            return $conn->query("select * from WebsiteList orderby totalS ASC");
+        }
+
+        public function getTime(){
+            $conn = $this->getConnection();
+            return $conn->query("select * from WebsiteList orderby reviewed");
+        }
     }
 ?>
