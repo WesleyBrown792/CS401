@@ -29,7 +29,7 @@
 
         public function login($user, $pass){
             $conn = $this->getConnection();
-            return $conn->query("select username, password from user while username = {$user} AND password = {$pass}", PDO::FETCH_ASSOC);
+            return $conn->query("select username, password from user while username = $user AND password = $pass", PDO::FETCH_ASSOC);
         }
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){
@@ -47,7 +47,7 @@
         }
         
         public function addworstsite(){
-            
+
         }
     }
 ?>
