@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> User Login and Registration </tital>
+    <title> User Login and Registration </title>
     <link rel="stylesheet" teype="text/css" href="style.css"/>
 </head>
 
