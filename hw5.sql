@@ -1,3 +1,5 @@
+create Database testdb;
+
 create table user (
 	username Varchar(264) Not Null Primary Key,
     password Varchar(64) Not null,

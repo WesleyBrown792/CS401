@@ -1,26 +1,11 @@
 <?php
-$servername = "localhost";
+$dsn = 'mysql:dbname=testdb;host=192.168.189.1'
 $username = "username";
 $password = "password";
-$dbname = "myDBPDO";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-  // sql to create table
-  $sql = "CREATE TABLE Users (
-        username Varchar(264) Not Null Primary Key,
-        password Varchar(64) Not null,
-        access integer(1))";
-
-  // use exec() because no results are returned
-  $conn->exec($sql);
-  echo "Table Users created successfully";
+  $sbh = new PDO($dsn, $username, $password);
 } catch(PDOException $e) {
-  echo $sql . "<br>" . $e->getMessage();
+  echo "Connection failed" . $e->getMessage();
 }
-
-$conn = null;
 ?> 
