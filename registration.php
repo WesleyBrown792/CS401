@@ -1,28 +1,16 @@
 <?php
+require_once 'Dao.php';
 
-session_start();
-header('location:index.php');
-
-
-$con = sysqli_connect('localhost','root','sacredheartsclub');
-
-mysqli_select_db($con, 'test');
-
+$dao = new Dao();
 $name = $_POST['user'];
 $pass = $_POST['password'];
-$acc = 0;
 
-$s = "select * from user where name = '$name'";
+$exists = $dao->registration($name);
 
-$result = mysqli_query($con. $s);
-
-$num =  mysqli_num_rows($result);
-
-if($num == 1){
-}else{
-    $reg= "inset into user (name, password, access) values ('$name', '$pass', '$acc')";
-    mysqli_query($con, $reg);
+if($exists != null){
+    $dao->adduser($name, $pass);
     header('location:Home.php');
+}else{
+    header('location:index.php');
 }
-
-?>
+exit();

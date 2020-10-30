@@ -1,6 +1,5 @@
 <?php
-
-session_start();
+require_once 'Dao.php';
 
 $dao = new Dao();
 $name = $_POST['user'];
@@ -14,5 +13,4 @@ if($exists != null){
 }else{
     header('location:index.php');
 }
-
-?>
+exit();
