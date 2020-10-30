@@ -1,11 +1,44 @@
-<?php
-$dsn = 'mysql:dbname=testdb;host=192.168.189.1'
-$username = "username";
-$password = "password";
+<html>
+<head>
+    <title> User Login and Registration </tital>
+    <link rel="stylesheet" teype="text/css" href="style.css"/>
+</head>
 
-try {
-  $sbh = new PDO($dsn, $username, $password);
-} catch(PDOException $e) {
-  echo "Connection failed" . $e->getMessage();
-}
-?> 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2> Login Here </h2>
+                <form action="validation.php" method="post">
+                    <div class="form-group">
+                        <label>Username</lable>
+                        <input type="text" name="user" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</lable>
+                        <input type="password" name="pass" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Login </button>
+            </div>
+            <div class="col-md-6">
+                <h2> Register Here </h2>
+                <form action="registration.php" method="post">
+                    <div class="form-group">
+                        <label>Username</lable>
+                        <input type="text" name="user" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</lable>
+                        <input type="password" name="pass" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Register </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+</html>
