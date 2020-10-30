@@ -6,6 +6,7 @@
 
 <body>
     <div class="container">
+        <div class login box>
         <div class="row">
             <div class="col-md-6">
                 <h2> Login Here </h2>
@@ -34,11 +35,7 @@
                     <button type="submit" class="btn btn-primary"> Register </button>
             </div>
         </div>
+        </div>
     </div>
 </body>
-
-
-
-
-
 </html>
