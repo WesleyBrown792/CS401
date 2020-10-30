@@ -7,7 +7,7 @@
     </header>
     <body>
         <div>
-            <a href=Home.html>
+            <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
 
@@ -15,18 +15,18 @@
 
         </div>
         <nav>
-            <button onclick="window.location.href='B1.html';">
+            <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z
               </button>
 
-            <button onclick="window.location.href='B2.html';">
+            <button onclick="window.location.href='B2.php';">
                 Random IP Generator
               </button>
 
-            <button onclick="window.location.href='B3.html';">
+            <button onclick="window.location.href='B3.php';">
                 About Us
               </button>
-            <button onclick="window.location.href='B4.html';">
+            <button onclick="window.location.href='B4.php';">
                 Leave A Review
               </button>
             </nav>
@@ -34,23 +34,9 @@
         <div>
             <div>
                 <h2>Most Recently Reviewed</h2>
-                <table style="width:100%">
-                    <tr>
-                      <th>URL</th>
-                      <th>Total Score</th>
-                      <th>P1 Score</th>
-                      <th>P2 Score</th>
-                      <th>P3 Score</th>
-                      <th>P4 Score</th>
-                    </tr>
-                    <tr>
-                      <td>Example URL</td>
-                      <td>200</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                      <td>50</td>
-                    </tr>
+                <table>
+                    <thead><th>URL</th><th>Total Score</th></thead>
+
                   </table> 
             </div>
              

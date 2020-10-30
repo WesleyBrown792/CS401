@@ -11,24 +11,24 @@ require_once 'table.php';
     </header>
     <body>
         <div>
-            <a href=Home.html>
+            <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
             <img src="searchbar.png" width="400" height="150" alt="non-working searchbar">
         </div>
         <nav>
-            <button onclick="window.location.href='B1.html';">
+            <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z
               </button>
 
-            <button onclick="window.location.href='B2.html';">
+            <button onclick="window.location.href='B2.php';">
                 Random IP Generator
               </button>
 
-            <button onclick="window.location.href='B3.html';">
+            <button onclick="window.location.href='B3.php';">
                 About Us
               </button>
-            <button onclick="window.location.href='B4.html';">
+            <button onclick="window.location.href='B4.php';">
                 Leave A Review
               </button>
             </nav>
