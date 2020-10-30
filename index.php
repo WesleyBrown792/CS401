@@ -13,11 +13,11 @@
                 <form action="validation.php" method="post">
                     <div class="form-group">
                         <label>Username</lable>
-                        <input type="text" name="user" class="form-control" required>
+                        <input type="text" name="user" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label>Password</lable>
-                        <input type="password" name="pass" class="form-control" required>
+                        <input type="password" name="pass" class="form-control" >
                     </div>
                     <button type="submit" class="btn btn-primary"> Login </button>
             </div>
@@ -26,11 +26,11 @@
                 <form action="registration.php" method="post">
                     <div class="form-group">
                         <label>Username</lable>
-                        <input type="text" name="user" class="form-control" required>
+                        <input type="text" name="user" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label>Password</lable>
-                        <input type="password" name="pass" class="form-control" required>
+                        <input type="password" name="pass" class="form-control" >
                     </div>
                     <button type="submit" class="btn btn-primary"> Register </button>
             </div>
