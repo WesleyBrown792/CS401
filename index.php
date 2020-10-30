@@ -23,7 +23,7 @@
             </div>
             <div class="login-right">
                 <h2> Register Here </h2>
-                <form action="registration.php" method="post">
+                <form method="POST" action="registration.php">
                     <div class="form-group">
                         <label>Username</lable>
                         <input type="text" name="user" class="form-control" >

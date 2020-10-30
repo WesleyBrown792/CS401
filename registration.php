@@ -7,10 +7,7 @@ $pass = $_POST['password'];
 
 $exists = $dao->registration($name);
 
-if($exists != null){
-    $dao->adduser($name, $pass);
-    header('location:Home.php');
-}else{
-    header('location:index.php');
-}
+$dao->adduser($name, $pass);
+header('location:index.php');
+
 exit();
