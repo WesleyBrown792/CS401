@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+header('location:index.php');
 
 
 $con = sysqli_connect('localhost','root','sacredheartsclub');
