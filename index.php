@@ -1,7 +1,7 @@
 <html>
 <head>
     <title> User Login and Registration </title>
-    <link rel="stylesheet" teype="text/css" href="style.css"/>
+    <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
 <body>
