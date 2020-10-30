@@ -46,8 +46,9 @@
             $q->execute();
         }
         
-        public function addworstsite(){
-
+        public function getWebsites(){
+            $conn = $this->getConnection();
+            return $conn->query("select * from WebsiteList");
         }
     }
 ?>

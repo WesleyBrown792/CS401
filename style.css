@@ -31,3 +31,21 @@ ul {
     height: 2.5rem;            /* Footer height */
   }
 
+  table{
+    border-collapse: collapse;
+    margin: 15 0;
+  }
+
+  table, th, td{
+    border: 3px solid black;
+    font-size: 10px;
+  }
+
+  th{
+    background-color: #AAAAAA;
+  }
+
+  td{
+    font-size: 10px;
+    padding: 10 13;
+  }
