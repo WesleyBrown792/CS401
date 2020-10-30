@@ -1,3 +1,6 @@
+
+
+
 <html>
     <header>
         <title>Random IP Generator</title>
@@ -29,17 +32,18 @@
             </nav>
         <div>
             <div>
-                This is where the random IP will go try:456.567.234.876 W8 thats not an ip address I want this to fill when the page is visited, fill correctly that is. The Visit link button really do be me tho.
+                <?php
+                  $randIP = mt_rand(0, 255) . "." . mt_rand(0, 255) . "." . mt_rand(0, 255) . "." . mt_rand(0, 255);
+                  echo ($randIP);
+                ?>
             </div>
             <div>
-                <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">
+                <button onclick="window.location.href='B2.php'">
                     Generate Random IP
                   </button>
             </div>
             <div>
-                <button onclick="window.location.href='https://www.youtube.com/watch?v=1WburVhYHn8';">
-                    Visit this site here
-                  </button>
+                there should be a button connected to php here
             </div>
         </div>
         <footer>
