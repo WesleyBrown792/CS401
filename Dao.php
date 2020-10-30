@@ -45,6 +45,9 @@
             $q->bindParam(":P4S",$P4);
             $q->execute();
         }
-
+        
+        public function addworstsite(){
+            
+        }
     }
 ?>
