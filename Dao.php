@@ -6,8 +6,10 @@
         private $pass = "f2c8495a";
         public function getConnection() {
             try{
-                $conn = new PDO ("mysql:host={$this->host};dbname={$this->db};user{$this->user};pass={$this->pass}");
+                $conn = new PDO ("mysql:host={$this->host};dbname={$this->db}", $this->user,$this->pass);
+                return $conn;
             }catch (Exception $e){
+                echo print_r($e,1);
                 exit;
             }
         }
