@@ -21,7 +21,7 @@ if($num == 1){
 }else{
     $reg= "inset into user (name, password, access) values ('$name', '$pass', '$acc')";
     mysqli_query($con, $reg);
-    echo "Registration Successful";
+    header('location:Home.php');
 }
 
 ?>

@@ -17,7 +17,7 @@ $s = "select * from user where name = '$name' && password = '$pass'";
 $result =  mysqli_num_rows($result);
 
 if($num == 1){
-    header('location:home.php');
+    header('location:Home.php');
 }else{
     header('location:index.php');
 }
