@@ -8,6 +8,6 @@ $pass = $_POST['password'];
 $exists = $dao->registration($name);
 
 $dao->adduser($name, $pass);
-header('location:index.php');
+header('location: https://pacific-lake-69332.herokuapp.com/Home.php');
 
 exit();
