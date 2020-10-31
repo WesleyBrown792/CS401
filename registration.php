@@ -5,9 +5,14 @@ $dao = new Dao();
 $name = $_POST['user'];
 $pass = $_POST['password'];
 
-$dao->adduser($name, $pass);
-session_start();
 
-header('location: https://pacific-lake-69332.herokuapp.com/Home.php');
+$exists = $dao->registration($name);
 
+if(count($exists)>0){
+    echo"This User already exists";
+    header('location:index.php');
+}else{
+    $dao->adduser($name, $pass);
+    header('location:Home.php');
+}
 exit();

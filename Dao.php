@@ -16,7 +16,7 @@
 
         public function registration($name){
             $conn = $this->getConnection();
-            return $conn->query("select username from user while username = {$name}", PDO::FETCH_ASSOC);
+            return $conn->query("select username from user while username = '$name'");
         }
 
         public function adduser($user, $pass, $acc){
@@ -31,7 +31,7 @@
 
         public function login($user, $pass){
             $conn = $this->getConnection();
-            return $conn->query("select username, password from user while username = '$user' AND password = '$pass'", PDO::FETCH_ASSOC);
+            return $conn->query("select username, password from user while username = '$user' AND password = '$pass'");
         }
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){
