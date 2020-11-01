@@ -31,7 +31,7 @@
         <h2> Submit A New Website Review</h2>
                 <form method="POST" action="input.php">
                     <div class="form-group">
-                        <label>Site Name</lable>
+                        <div><label>Site Name</lable></div>
                         <input type="text" name="name" class="form-control" >
                     </div>
                     <div class="form-group">
@@ -39,19 +39,19 @@
                         <input type="text" name="url" class="form-control" >
                     </div>
                     <div class="form-group">
-                        <label>How Functional is the Website</lable>
+                        <div><label>How Functional is the Website</lable></div>
                         <input type="text" name="func" class="form-control" >
                     </div>
                     <div class="form-group">
-                        <label>How Good is the Website Layout </lable>
+                        <div><label>How Good is the Website Layout </lable></div>
                         <input type="text" name="layout" class="form-control" >
                     </div>
                     <div class="form-group">
-                        <label>Does the Website have Correct/Good Information</lable>
+                        <div><label>Does the Website have Correct/Good Information</lable></div>
                         <input type="text" name="info" class="form-control" >
                     </div>
                     <div class="form-group">
-                        <label>Something Else</lable>
+                        <div><label>Something Else</lable></div>
                         <input type="text" name="else" class="form-control" >
                     </div>
                     <input type="submit" value="Submit">
