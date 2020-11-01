@@ -28,26 +28,37 @@
               </button>
             </nav>
         <div>
-            <div>Leave your review below</div>
-            <form action="/action_page.php">
-                <ul>
-                    <li></li><label for="Layout">Layout Score:</label></li>
-                    <li><input type="text" id="Layout" name="Layout"></li>
-                    <li><label for="Design">Design Score:</label></li>
-                    <li><input type="text" id="Design" name="Design"></li>
-                    <li><label for="Info">Info Score:</label></li>
-                    <li><input type="text" id="Info" name="Info"></li>
-                    <li><label for="Workable">Workable Score:</label></li>
-                    <li><input type="text" id="Workable" name="Workable"></li>
-                </ul>                
-              </form> 
-              <button onclick="window.location.href='https://www.youtube.com/watch?v=d1YBv2mWll0';">
-                Submit
-              </button>
+        <h2> Submit A New Website Review</h2>
+                <form method="POST" action="input.php">
+                    <div class="form-group">
+                        <label>Site Name</lable>
+                        <input type="text" name="name" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>Site URL</lable>
+                        <input type="text" name="url" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>How Functional is the Website</lable>
+                        <input type="text" name="func" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>How Good is the Website Layout </lable>
+                        <input type="text" name="layout" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>Does the Website have Correct/Good Information</lable>
+                        <input type="text" name="info" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>Something Else</lable>
+                        <input type="text" name="else" class="form-control" >
+                    </div>
+                    <input type="submit" value="Submit">
         </div>
         <footer>
-            <p>Author: Ya Boi Wesley Brown</p>
-            <p>There is no Copy Right cause there is no Copy</p>
+            <p>Author: Wesley Brown</p>
+            <p>There is no Copy Right</p>
           </footer> 
     </body>
 </html>
