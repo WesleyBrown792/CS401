@@ -43,7 +43,9 @@
                   </button>
             </div>
             <div>
-                there should be a button connected to php here
+            <button onclick="window.location.href=$randIP">
+                    Visit Random IP
+                  </button>
             </div>
         </div>
         <footer>

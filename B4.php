@@ -53,7 +53,7 @@
                         <input type="text" name="info" class="form-control" >
                     </div>
                     <div class="form-group">
-                        <div><label>Something Else</lable></div>]
+                        <div><label>Something Else</lable></div>
 
                         <input type="text" name="else" class="form-control" >
                     </div>

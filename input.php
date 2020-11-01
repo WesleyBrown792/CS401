@@ -11,6 +11,7 @@ $else = $_POST['else'];
 
 
 $exists = $dao->addwebsite($name, $url, $func, $layout, $info, $else);
+echo "addedwebsites";
 
 if(count($exists)>0){
     header('location:Home.php');
