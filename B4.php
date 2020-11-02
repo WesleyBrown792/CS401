@@ -11,7 +11,6 @@
             <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
-            <img src="searchbar.png" width="400" height="150" alt="non-working searchbar">
         </div>
         <nav>
             <button onclick="window.location.href='B1.php';">
@@ -57,7 +56,9 @@
 
                         <input type="text" name="else" class="form-control" >
                     </div>
-                    <input type="submit" value="Submit">
+                    <div>
+                      <input type="submit" value="Submit">
+                    </div>
         </div>
         <footer>
             <p>Author: Wesley Brown</p>
