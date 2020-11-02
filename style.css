@@ -3,17 +3,10 @@ body{
 }
 
 div{
-    padding-top: 5%
+    padding: 5%
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5%;
-  }
-  a{
-    float: left;
-}
+
 
 #page-container {
     position: relative;
@@ -48,4 +41,11 @@ ul {
   td{
     font-size: 10px;
     padding: 10 13;
+    margin-top: 30px;
+  }
+
+  .container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
   }

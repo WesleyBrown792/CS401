@@ -32,7 +32,7 @@ require_once 'table.php';
                 Leave A Review
               </button>
             </nav>
-        <div>
+        <div class="container">
             <?php
               renderTable("WebsiteList");
             ?>

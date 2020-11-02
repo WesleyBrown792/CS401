@@ -31,7 +31,7 @@
 
         public function login($user, $pass){
             $conn = $this->getConnection();
-            return $conn->query("select username, password from user while username = '$user' AND password = '$pass'");
+            return $conn->query("select * from user while username = '$user' AND password = '$pass'");
         }
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){

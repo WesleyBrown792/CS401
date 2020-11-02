@@ -35,21 +35,21 @@ require_once 'table.php';
             </nav>
 
         <div>
-            <div>
+            <div class="container">
                 <h2>Most Recently Reviewed</h2>
                 <?php
                 renderTime("WebsiteList");
                 ?>
             </div>
              
-            <div>
+            <div class="container">
                 <h2>Best Sites</h2>
                 <?php
                 renderBest("WebsiteList");
                 ?>
             </div>
 
-            <div>
+            <div class="container">
                 <h2>Worst Sites</h2>
                 <?php
                  renderWorst("WebsiteList");

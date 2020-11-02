@@ -43,7 +43,7 @@
                   </button>
             </div>
             <div>
-            <button onclick="window.location.href=$randIP">
+            <button onclick="window.location.href='$randIP'">
                     Visit Random IP
                   </button>
             </div>
