@@ -33,28 +33,28 @@
                 <form method="POST" action="input.php">
                     <div class="form-group">
                         <div><label>Site Name</lable></div>
-                        <input type="text" name="name" class="form-control" >
+                        <input type="text" name="name" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <div><label>Site URL</lable></div>
-                        <input type="text" name="url" class="form-control" >
+                        <input type="text" name="url" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Functional is the Website</lable></div>
-                        <input type="text" name="func" class="form-control" >
+                        <input type="text" name="func" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Good is the Website Layout </lable></div>
-                        <input type="text" name="layout" class="form-control" >
+                        <input type="text" name="layout" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <div><label>Does the Website have Correct/Good Information</lable></div>
-                        <input type="text" name="info" class="form-control" >
+                        <input type="text" name="info" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <div><label>Something Else</lable></div>
 
-                        <input type="text" name="else" class="form-control" >
+                        <input type="text" name="else" class="form-control" required >
                     </div>
                     <div>
                       <input type="submit" value="Submit">
