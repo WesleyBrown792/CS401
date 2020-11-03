@@ -39,7 +39,7 @@ function renderWorst(){
             <th>URL</th><th>Score</th>
         </thead>
         <?php
-            for($x=0;$x<5;$x++){
+            foreach($websites as $websites){
                 echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
             }
         ?>
@@ -62,7 +62,7 @@ function renderBest(){
             <th>URL</th><th>Score</th>
         </thead>
         <?php
-            for($x=0;$x<5;$x++){
+            foreach($websites as $websites){
                 echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
             }
         ?>
@@ -85,7 +85,7 @@ function renderTime(){
             <th>URL</th><th>Score</th>
         </thead>
         <?php
-            for($x=0;$x<5;$x++){
+            foreach($websites as $websites){
                 echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
             }
         ?>
