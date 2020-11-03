@@ -19,7 +19,7 @@
                     </div>
                     <input type="submit" value="Login">
             </div>
-            <a link='Register.php'> Create An Account Here </a>
+            <a href='Register.php'> Create An Account Here </a>
     </div>
 </body>
 </html>

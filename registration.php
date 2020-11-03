@@ -10,7 +10,7 @@ $exists = $dao->registration($name);
 
 if(count($exists)>0){
     echo"This User already exists";
-    header('location:index.php');
+    header('location:Register.php');
 }else{
     $dao->adduser($name, $pass);
     header('location:Home.php');
