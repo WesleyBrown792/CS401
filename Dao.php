@@ -16,7 +16,7 @@
 
         public function registration($name){
             $conn = $this->getConnection();
-            return $conn->query("select username from user while username = '$name'");
+            return $conn->query("select username from user where username = '$name'");
         }
 
         public function adduser($user, $pass, $acc){
@@ -31,7 +31,7 @@
 
         public function login($user, $pass){
             $conn = $this->getConnection();
-            return $conn->query("select * from user while username = '$user' AND password = '$pass'");
+            return $conn->query("select * from user where username = '$user' AND password = '$pass'");
         }
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){
