@@ -3,7 +3,7 @@ body{
 }
 
 div{
-    padding: 5%
+    padding: 10px;
 }
 
 
@@ -24,13 +24,19 @@ div{
     height: 3px;            /* Footer height */
   }
 
+  table{
+    width: 50%;
+    object-position: center;
+    position: center;
+  }
+
   table, th, td{
     border: 3px solid black;
     font-size: 20px;
   }
 
   th{
-    background-color: #AAAAAA;
+    background-color: grey;
   }
 
   td{
@@ -42,4 +48,9 @@ div{
   .center{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .homebtn{
+    margin-left: 5%;
+    margin-top: 5%;
   }

@@ -9,7 +9,7 @@ require_once 'table.php';
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
-        <div>
+        <div class='homebtn'>
             <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>

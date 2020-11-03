@@ -18,6 +18,7 @@
                         <input type="password" name="pass" class="form-control" require_once >
                     </div>
                     <input type="submit" value="Login">
+                </form>
             </div>
             <a href='Register.php'> Create An Account Here </a>
     </div>

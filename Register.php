@@ -22,6 +22,7 @@ require_once 'registration.php';
                         <input type="password" name="pass" class="form-control" require_once >
                     </div>
                     <input type="submit" value="Register">
+                </form>
             </div>
     </div>
 </body>
