@@ -1,14 +1,18 @@
+<?php
+require_once 'registration.php';
+?>
+
 <html>
 <head>
-    <title> User Login </title>
+    <title> User Registration </title>
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
 <body>
     <div class="container">
-            <div class="login-left">
-                <h2> Login Here </h2>
-                <form method="POST" action="login.php">
+            <div class="login-right">
+                <h2> Register Here </h2>
+                <form method="POST" action="registration.php">
                     <div class="form-group">
                         <label>Username</lable>
                         <input type="text" name="user" class="form-control" require_once >
@@ -17,9 +21,8 @@
                         <label>Password</lable>
                         <input type="password" name="pass" class="form-control" require_once >
                     </div>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Register">
             </div>
-            <a link='Register.php'> Create An Account Here </a>
     </div>
 </body>
 </html>
