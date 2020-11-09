@@ -14,12 +14,7 @@
             }
         }
 
-        public function registration($name){
-            $conn = $this->getConnection();
-            return $conn->query("select username from user where username = '$name'");
-        }
-
-        public function adduser($user, $pass, $acc){
+        public function addUser($user, $pass, $acc){
             $conn = $this->getConnection();
             $saveQ = ("insert into user (username,password,access) values (:user,:pass,:acc) ");
             $q = $conn->prepare($saveQ);
@@ -29,7 +24,7 @@
             $q->execute();
         }
 
-        public function login($user, $pass){
+        public function userExists($user, $pass){
             $conn = $this->getConnection();
             return $conn->query("select * from user where username = '$user' AND password = '$pass'");
         }

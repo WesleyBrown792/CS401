@@ -1,18 +1,16 @@
 <?php
+session_start();
+
 require_once 'Dao.php';
 
 $dao = new Dao();
-$name = $_POST['user'];
-$pass = $_POST['password'];
 
-
-$exists = $dao->registration($name);
-
-if(count($exists)>0){
-    echo"This User already exists";
-    header('location:Register.php');
-}else{
-    $dao->adduser($name, $pass);
-    header('location:Home.php');
+if ($dao->userExists($_POST['user'], $_POST['password'])) {
+    echo"User Already Exists";
+    header("Location: Register.php");
+} else {
+    $_SESSION['authenticated'] = true;
+    $dao->addUser($_POST['user'], $_POST['password'], 0);
+    header("Location: Home.php");
+    exit();
 }
-exit();
