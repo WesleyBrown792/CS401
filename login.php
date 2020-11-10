@@ -2,11 +2,12 @@
 session_start();
 
 require_once 'Dao.php';
-$user='admin';
-$pass='password';
+$user="admin";
+$pass="password";
 $dao = new Dao();
 $stmt = $dao-> userExists($_POST['user'], $_POST['pass']);
 $stmt2 = $dao-> userExists($_POST['user'], $_POST['password']);
+echo $user;
 echo "$user , $pass , fuck";
 echo $stmt;
 echo $stmt2;
