@@ -9,21 +9,17 @@ require_once 'registration.php';
 </head>
 
 <body>
-    <div class="container">
-            <div class="login-right">
-                <h2> Register Here </h2>
-                <form method="POST" action="registration.php">
-                    <div class="form-group">
-                        <label>Username</lable>
-                        <input type="text" name="user" class="form-control" require_once >
-                    </div>
-                    <div class="form-group">
-                        <label>Password</lable>
-                        <input type="password" name="pass" class="form-control" require_once >
-                    </div>
-                    <input type="submit" value="Register">
-                </form>
-            </div>
-    </div>
+        <h2> Register Here </h2>
+            <form method="POST" action="registration.php">
+                <div class="form-group">
+                    <label>Username</lable>
+                    <input type="text" name="user" class="form-control" require_once >
+                </div>
+                <div class="form-group">
+                    <label>Password</lable>
+                    <input type="password" name="pass" class="form-control" require_once >
+                </div>
+                <input type="submit" value="Register">
+            </form>
 </body>
 </html>
