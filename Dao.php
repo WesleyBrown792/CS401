@@ -28,7 +28,17 @@
 
         public function userExists($user, $pass){
             $conn = $this->getConnection();
-            return $conn->query("select * from user where username = '$user' AND password = '$pass'");
+            if($user=null || $pass==null){
+                return false;
+            }else{
+                
+                $stmt = $conn->query("select * from user where username = '$user' AND password = '$pass'");
+                if(count($stmt)==1){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
         }
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){
