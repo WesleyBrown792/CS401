@@ -30,7 +30,7 @@
             $conn = $this->getConnection();
             $stmt =  $conn->query("select * from user where username = '$user' AND password = '$pass'");
             
-            if($user==null||$pass==null||$pass==""||$user==""){
+            if(is_null($user)||$user==""){
                 
                 return false;
             }else{

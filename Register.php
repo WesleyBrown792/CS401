@@ -18,7 +18,7 @@ require_once 'registration.php';
                 </div>
                 <div class="form-group">
                     <label>Password</lable>
-                    <input type="password" name="pass" class="form-control" require_once >
+                    <input type="password" name="password" class="form-control" require_once >
                 </div>
                 <input type="submit" value="Register">
             </form>
