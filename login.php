@@ -5,7 +5,7 @@ require_once 'Dao.php';
 $user="admin";
 $pass="password";
 $dao = new Dao();
-$stmt = $dao-> userExists($_POST["user"], $_POST["password"]);
+$stmt = $dao-> userExists($_POST['user'], $_POST['password']);
 $stmt2 = $dao-> userExists($user, $pass);
 echo $stmt2;
 
