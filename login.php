@@ -7,7 +7,7 @@ $pass=$_POST['pass'];
 $dao = new Dao();
 $stmt = $dao-> userExists($_POST['user'], $_POST['pass']);
 $stmt2 = $dao-> userExists($_POST['user'], $_POST['password']);
-print "$user , $pass";
+print "$user , $pass , fuck";
 exit();
 
 
