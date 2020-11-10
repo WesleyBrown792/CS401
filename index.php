@@ -10,11 +10,6 @@ require_once 'login.php';
 </head>
 
 <body>
-    test
-    <?php
-    echo print_r($_SESSION,1);
-    exit();
-    ?>
         <h2> Login Here </h2>
         <form method="POST" action="login.php">
             <div> Username: <input type="text" name="user" require_once/></div>
