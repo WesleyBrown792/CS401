@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+echo print_r($_SESSION,1);
+exit();
 require_once 'login.php';
 ?>
 
