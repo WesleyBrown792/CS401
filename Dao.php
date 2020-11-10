@@ -29,13 +29,16 @@
         public function userExists($user, $pass){
             $conn = $this->getConnection();
             if($user=null || $pass==null){
+                echo "nulled";
                 return false;
             }else{
                 
                 $stmt = $conn->query("select * from user where username = '$user' AND password = '$pass'");
                 if(count($stmt)==1){
+                    echo"trueed";
                     return true;
                 }else{
+                    echo"falseed";
                     return false;
                 }
             }
