@@ -1,26 +1,21 @@
 <?php
 session_start();
-require_once 'registration.php';
+
 ?>
 
 <html>
 <head>
-    <title> User Registration </title>
+    <title>Register</title>
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
 <body>
-        <h2> Register Here </h2>
-            <form method="POST" action="registration.php">
-                <div class="form-group">
-                    <label>Username</lable>
-                    <input type="text" name="user" class="form-control" require_once >
-                </div>
-                <div class="form-group">
-                    <label>Password</lable>
-                    <input type="password" name="password" class="form-control" require_once >
-                </div>
-                <input type="submit" value="Register">
-            </form>
+    <h1>Register Here</h1>
+    <form method="POST" action="registration.php">
+        <div>User: <input type="text" name="user" id="user"/></div>
+        <div>Password: <input type="password" name="password" id="password"/></div>
+        <input type="submit" value="Submit">
+    </form>
+    <a href=index.php> Click Here If You Already Have An Account</a>
 </body>
 </html>

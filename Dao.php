@@ -38,10 +38,8 @@
                 return false;
             }else{
                 if(count($result)==1){
-                    print "its true";
                     return true;
                 }else{
-                    print "false out";
                     return false;
                 }
             }
