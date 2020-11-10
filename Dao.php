@@ -31,7 +31,7 @@
             $stmt =  $conn->query("select * from user where username = '$user' AND password = '$pass'");
             
             if($user==null||$pass==null||$pass==""||$user==""){
-                print "how to got out";
+                
                 return false;
             }else{
                 if(count($stmt)==1){
