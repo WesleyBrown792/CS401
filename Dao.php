@@ -4,6 +4,8 @@
         private $db = "heroku_4723b1ca872b752";
         private $user = "beb4004d3c922d";
         private $pass = "f2c8495a";
+
+
         public function getConnection() {
             try{
                 $conn = new PDO ("mysql:host={$this->host};dbname={$this->db}", $this->user,$this->pass);
@@ -16,7 +18,7 @@
 
         public function addUser($user, $pass, $acc){
             $conn = $this->getConnection();
-            $saveQ = ("insert into user (username,password,access) values (:user,:pass,:acc) ");
+            $saveQ = "insert into user (username,password,access) values (:user,:pass,:acc) ";
             $q = $conn->prepare($saveQ);
             $q->bindParam(":user",$user);
             $q->bindParam(":pass",$pass);
@@ -40,6 +42,14 @@
             $q->bindParam(":P2S",$P2);
             $q->bindParam(":P3S",$P3);
             $q->bindParam(":P4S",$P4);
+            $q->execute();
+        }
+
+        public function deleteWebsite($URL){
+            $conn = $this->getConnection();
+            $deleteQuery = "delete from WebsiteList where URL = :URL";
+            $q = $conn->prepare($deleteQuery);
+            $q->bindParam(":URL", $URL);
             $q->execute();
         }
         
