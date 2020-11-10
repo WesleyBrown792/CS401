@@ -2,9 +2,10 @@
 session_start();
 
 require_once 'Dao.php';
-echo print_r($_SESSION,1);
-exit();
 $dao = new Dao();
+echo print_r($dao->userExists($_POST['user'], $_POST['password']),1);
+exit();
+
 
 if ($dao->userExists($_POST['user'], $_POST['password'])) {
     $_SESSION['authenticated'] = true;
