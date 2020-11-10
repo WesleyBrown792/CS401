@@ -18,7 +18,7 @@
 
         public function addUser($user, $pass, $acc){
             $conn = $this->getConnection();
-            $saveQ = "insert into user (username,password,access) values (:user,:pass,:acc) ";
+            $saveQ = "insert into user (username,password,access) values (:user,:pass,:acc);";
             $q = $conn->prepare($saveQ);
             $q->bindParam(":user",$user);
             $q->bindParam(":pass",$pass);
@@ -28,13 +28,16 @@
 
         public function userExists($user, $pass){
             $conn = $this->getConnection();
-            $stmt =  $conn->query("select * from user where username = '$user' AND password = '$pass'");
-            
+            $stmt =  $conn->prepare("select * from user where username = :user and password = :pass;");
+            $stmt->bindParam(":user",$user,PDO::PARAM_STR);
+            $stmt->bindParam(":pass",$pass,PDO::PARAM_STR);
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
             if(is_null($user)||$user==""){
-                
                 return false;
             }else{
-                if(count($stmt)==1){
+                if(count($result)==1){
                     print "its true";
                     return true;
                 }else{
@@ -47,7 +50,7 @@
 
         public function addwebsite($name, $URL, $totalS, $P1, $P2, $P3, $P4){
             $conn = $this->getConnection();
-            $saveQ = "insert into Websitelist (Name, URL, totalS, P1S, P2S, P3S, P4S, reviewed) values (:name, :URL, :totalS, :P1, :P2, :P3, :P4, now())";
+            $saveQ = "insert into Websitelist (Name, URL, totalS, P1S, P2S, P3S, P4S, reviewed) values (:name, :URL, :totalS, :P1, :P2, :P3, :P4, now());";
             $q = $conn->prepare($saveQ);
             $q->bindParam(":name",$name);
             $q->bindParam(":URL",$URL);
@@ -61,7 +64,7 @@
 
         public function deleteWebsite($URL){
             $conn = $this->getConnection();
-            $deleteQuery = "delete from WebsiteList where URL = :URL";
+            $deleteQuery = "delete from WebsiteList where URL = :URL;";
             $q = $conn->prepare($deleteQuery);
             $q->bindParam(":URL", $URL);
             $q->execute();
@@ -69,22 +72,22 @@
         
         public function getWebsites(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList");
+            return $conn->query("select * from WebsiteList;");
         }
 
         public function getWorst(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby totalS DESC");
+            return $conn->query("select * from WebsiteList orderby totalS DESC;");
         }
 
         public function getBest(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby totalS ASC");
+            return $conn->query("select * from WebsiteList orderby totalS ASC;");
         }
 
         public function getTime(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby reviewed");
+            return $conn->query("select * from WebsiteList orderby reviewed;");
         }
     }
 ?>

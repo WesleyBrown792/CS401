@@ -1,21 +1,29 @@
 <?php
 session_start();
-require_once 'login.php';
+echo "<pre>" . print_r($_POST,true) . "</pre>";
+
 ?>
 
 <html>
 <head>
-    <title> User Login </title>
+    <tital>User Login</
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
 <body>
-        <h2> Login Here </h2>
-        <form method="POST" action="login.php">
-            <div> Username: <input type="text" name="user" require_once/></div>
-            <div> Password: <input type="password" name="password" require_once/></div>
-            <input type="submit" value="Login">
-        </form>
-        <a href='Register.php'> Create An Account Here </a>
+    <h1>Login</h1>
+    <?php
+        if(isset($_POST)){
+            echo "<div> good </div>";
+        }else{
+            echo "<div> bad </div>";
+        }
+    ?>
+    <form method="POST" action="login.php">
+        <div>User: <input type="text" name="user" id="user"/></div>
+        <div>Password: <input type="password" name="password" id="password"/></div>
+        <input type="submit" value="Submit">
+    </form>
+    <a href=Register.php> Click Here If You Don't Already Have An Account</a>
 </body>
 </html>

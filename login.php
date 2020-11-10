@@ -1,18 +1,12 @@
 <?php
-session_start();
 
 require_once 'Dao.php';
-$user="admin";
-$pass="password";
+$user=$_POST["user"];
+$pass=$_POST["password"];
 $dao = new Dao();
-$stmt = $dao-> userExists($_POST['user'], $_POST['password']);
-$stmt2 = $dao-> userExists($user, $pass);
-echo $stmt2;
-
-exit();
 
 
-if ($dao->userExists($_POST['user'], $_POST['pass'])) {
+if ($dao->userExists($user, $pass)) {
     $_SESSION['authenticated'] = true;
     header("Location: Home.php");
 } else {
