@@ -4,7 +4,8 @@ session_start();
 require_once 'Dao.php';
 $dao = new Dao();
 $stmt = $dao-> userExists($_POST['user'], $_POST['password']);
-print "$stmt";
+echo print_r($stmt, 1);
+echo print_r($_SESSION, 1);
 exit();
 
 
