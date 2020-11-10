@@ -3,8 +3,8 @@ session_start();
 
 require_once 'Dao.php';
 $dao = new Dao();
-echo print_r($dao->userExists($_POST['user'], $_POST['password']),1);
-print "fuck";
+$stmt = $dao-> userExists($_POST['user'], $_POST['password']);
+print "$stmt";
 exit();
 
 
@@ -14,5 +14,4 @@ if ($dao->userExists($_POST['user'], $_POST['password'])) {
 } else {
     $_SESSION['authenticated'] = false;
     header("Location: index.php");
-    exit();
 }
