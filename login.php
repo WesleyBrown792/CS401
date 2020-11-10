@@ -7,6 +7,8 @@ $pass="password";
 $dao = new Dao();
 $stmt = $dao-> userExists($_POST["user"], $_POST["pass"]);
 $stmt2 = $dao-> userExists($user, $pass);
+echo $_POST["user"] , "uses double";
+echo $_POST['user'] , "uses single";
 echo $stmt;
 echo $stmt2;
 
