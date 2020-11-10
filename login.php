@@ -7,7 +7,6 @@ $stmt = $dao-> userExists($_POST['user'], $_POST['pass']);
 $stmt2 = $dao-> userExists($_POST['user'], $_POST['password']);
 echo print_r($stmt, 1);
 echo print_r($stmt2, 1);
-echo print_r($_SESSION, 1);
 exit();
 
 
