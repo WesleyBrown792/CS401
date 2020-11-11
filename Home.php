@@ -36,21 +36,21 @@ require_once 'table.php';
             <div class="center">
                 <h2>Most Recently Reviewed</h2>
                 <?php
-                renderTime("WebsiteList");
+                renderTime();
                 ?>
             </div>
              
             <div class="center">
                 <h2>Best Sites</h2>
                 <?php
-                renderBest("WebsiteList");
+                rendertable("WebsiteList");
                 ?>
             </div>
 
             <div class="center">
                 <h2>Worst Sites</h2>
                 <?php
-                 renderWorst("WebsiteList");
+                 rendertable("WebsiteList");
                  ?>
             </div>
         

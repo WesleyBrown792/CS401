@@ -70,22 +70,34 @@
         
         public function getWebsites(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList;");
+            $stmt = $conn->query("select * from WebsiteList;");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
         }
 
         public function getWorst(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby totalS DESC;");
+            $stmt =  $conn->query("select * from WebsiteList orderby totalS DESC;");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
         }
 
         public function getBest(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby totalS ASC;");
+            $stmt = $conn->query("select * from WebsiteList orderby totalS ASC;");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
         }
 
         public function getTime(){
             $conn = $this->getConnection();
-            return $conn->query("select * from WebsiteList orderby reviewed;");
+            $stmt = $conn->query("select * from WebsiteList orderby reviewed;");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
         }
     }
 ?>

@@ -1,5 +1,3 @@
-
-
 <?php
 
 require_once 'Dao.php';
@@ -9,7 +7,6 @@ $dao = new Dao();
 
 
 if ($dao->userExists($user, $pass)) {
-    echo"User Already Exists";
     header("Location: Register.php");
 } else {
     $_SESSION['authenticated'] = true;
