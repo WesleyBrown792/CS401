@@ -1,5 +1,3 @@
-
-
 <html>
     <header>
         <title>Leave Review</title>
@@ -50,11 +48,6 @@
                     <div class="form-group">
                         <div><label>Does the Website have Correct/Good Information</lable></div>
                         <input type="text" name="info" class="form-control" required >
-                    </div>
-                    <div class="form-group">
-                        <div><label>Something Else</lable></div>
-
-                        <input type="text" name="else" class="form-control" required >
                     </div>
                     <div>
                       <input type="submit" value="Submit">

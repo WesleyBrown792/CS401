@@ -43,14 +43,14 @@ require_once 'table.php';
             <div class="center">
                 <h2>Best Sites</h2>
                 <?php
-                rendertable("WebsiteList");
+                renderBest();
                 ?>
             </div>
 
             <div class="center">
                 <h2>Worst Sites</h2>
                 <?php
-                 rendertable("WebsiteList");
+                 renderWorst();
                  ?>
             </div>
         

@@ -78,7 +78,7 @@
 
         public function getWorst(){
             $conn = $this->getConnection();
-            $stmt =  $conn->query("select * from WebsiteList orderby totalS DESC;");
+            $stmt =  $conn->query("select * from WebsiteList ORDER BY totalS DESC;");
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $result;
@@ -86,7 +86,7 @@
 
         public function getBest(){
             $conn = $this->getConnection();
-            $stmt = $conn->query("select * from WebsiteList orderby totalS ASC;");
+            $stmt = $conn->query("select * from WebsiteList ORDER BY totalS ASC;");
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $result;
@@ -94,7 +94,7 @@
 
         public function getTime(){
             $conn = $this->getConnection();
-            $stmt = $conn->query("select * from WebsiteList orderby reviewed;");
+            $stmt = $conn->query("select * from WebsiteList ORDER BY reviewed;");
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $result;
