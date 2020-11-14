@@ -36,11 +36,24 @@ function renderWorst(){
     ?>
     <table>
         <thead>
-            <th>URL</th><th>Score</th>
+            <th>#</th><th>URL</th><th>Score</th>
         </thead>
         <?php
-            foreach($websites as $websites){
-                echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
+            $holder;
+            $bigarray = array();
+            $x = 0;
+            foreach ($websites as $websites) {
+                $bigarray[$x] = $websites; 
+                $x++;
+            }
+            $y = count($bigarray)-1;
+            for ($holder=1;$y>=$x-4; $y--) {
+                $value = $bigarray[$y];
+                echo "<tr><td>{$holder['#']}</td><td>{$value['URL']}</td><td>{$value['totalS']}</td></tr>";
+                $holder++;
+                if($y<=0){
+                    $y=$x-4;
+                }
             }
         ?>
         </table>
@@ -59,11 +72,24 @@ function renderBest(){
     ?>
     <table>
         <thead>
-            <th>URL</th><th>Score</th>
+        <th>#</th><th>URL</th><th>Score</th>
         </thead>
         <?php
-            foreach($websites as $websites){
-                echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
+            $holder;
+            $bigarray = array();
+            $x = 0;
+            foreach ($websites as $websites) {
+                $bigarray[$x] = $websites; 
+                $x++;
+            }
+            $y = count($bigarray)-1;
+            for ($holder=1;$y>=$x-4; $y--) {
+                $value = $bigarray[$y];
+                echo "<tr><td>{$holder['#']}</td><td>{$value['URL']}</td><td>{$value['totalS']}</td></tr>";
+                $holder++;
+                if($y<=0){
+                    $y=$x-4;
+                }
             }
         ?>
         </table>
@@ -82,11 +108,24 @@ function renderTime(){
     ?>
     <table>
         <thead>
-            <th>URL</th><th>Score</th>
+        <th>#</th><th>URL</th><th>Score</th>
         </thead>
         <?php
-            foreach($websites as $websites){
-                echo "<tr><td>{$websites['URL']}</td><td>{$websites['totalS']}</td></tr>";
+            $holder;
+            $bigarray = array();
+            $x = 0;
+            foreach ($websites as $websites) {
+                $bigarray[$x] = $websites; 
+                $x++;
+            }
+            $y = count($bigarray)-1;
+            for ($holder=1;$y>=$x-4; $y--) {
+                $value = $bigarray[$y];
+                echo "<tr><td>{$holder['#']}</td><td>{$value['URL']}</td><td>{$value['totalS']}</td></tr>";
+                $holder++;
+                if($y<=0){
+                    $y=$x-4;
+                }
             }
         ?>
         </table>

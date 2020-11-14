@@ -53,10 +53,10 @@
             $q->bindParam(":name",$name);
             $q->bindParam(":URL",$URL);
             $q->bindParam(":totalS",$totalS);
-            $q->bindParam(":P1S",$P1);
-            $q->bindParam(":P2S",$P2);
-            $q->bindParam(":P3S",$P3);
-            $q->bindParam(":P4S",$P4);
+            $q->bindParam(":P1",$P1);
+            $q->bindParam(":P2",$P2);
+            $q->bindParam(":P3",$P3);
+            $q->bindParam(":P4",$P4);
             $q->execute();
         }
 
