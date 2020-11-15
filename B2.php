@@ -16,6 +16,7 @@
         <?php
             if($_SESSION['authenticated'] != true){
                 echo "Must be logged in to view";
+                header("Location: index.php");
             }
         ?>
         <nav>

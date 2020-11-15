@@ -18,7 +18,7 @@ function renderTable($tablename){
         <?php
             $holder = 1;
             foreach($websites as $websites){
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";
+                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
                 $holder++;
             }
         ?>
