@@ -5,6 +5,15 @@ $user=$_POST["user"];
 $pass=$_POST["password"];
 $dao = new Dao();
 
+if (strlen($pass) > 256){
+    echo "Password is too long";
+}
+
+if(strlen($user) > 256){
+    echo "Username is too long";
+}
+
+
 
 if ($dao->userExists($user, $pass)) {
     header("Location: Register.php");

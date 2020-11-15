@@ -10,6 +10,11 @@
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
         </div>
+        <?php
+            if($_SESSION['authenticated'] != true){
+                echo "Must be logged in to view";
+            }
+        ?>
         <nav>
             <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z

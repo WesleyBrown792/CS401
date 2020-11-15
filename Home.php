@@ -15,6 +15,11 @@ require_once 'table.php';
             </a>
 
         </div>
+        <?php
+            if($_SESSION['authenticated'] != true){
+                echo "Must be logged in to view";
+            }
+        ?>
         <nav>
             <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z
