@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'Dao.php';
 $user=$_POST["user"];
 $pass=$_POST["password"];

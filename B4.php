@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
     <header>
         <title>Leave Review</title>
@@ -12,7 +16,6 @@
         </div>
         <?php
             if($_SESSION['authenticated'] != true){
-                echo "Must be logged in to view";
                 header("Location: index.php");
             }
         ?>

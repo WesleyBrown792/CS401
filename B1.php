@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'table.php';
 ?>
 
@@ -17,7 +18,6 @@ require_once 'table.php';
         </div>
         <?php
             if($_SESSION['authenticated'] != true){
-                echo "Must be logged in to view";
                 header("Location: index.php");
             }
         ?>
