@@ -39,6 +39,10 @@ require_once 'table.php';
             </nav>
         <div class="container">
             <?php
+            checks the user access if it is 1 then run
+              if
+              renderATable("WebsiteList");
+              else
               renderTable("WebsiteList");
             ?>
         </div>

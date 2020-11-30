@@ -5,11 +5,14 @@ $_SESSION['authenticated'] = false;
 
 <html>
 <head>
+    <script src = "js/logged.js"></script>
     <title>User Login</title>
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
 <body>
+    //here it will generate a popup on loading the page
+    //The popup will tell the user to login/make an account to view the website
     <h1>Login</h1>
     <form method="POST" action="login.php">
         <div>User: <input type="text" name="user" id="user"/></div>
