@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'table.php';
+if($_SESSION['authenticated'] != true){
+    header("Location: index.php");
+}
 ?>
 
 <html>
@@ -10,17 +13,14 @@ require_once 'table.php';
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
-        <div class='homebtn'>
+        <nav>
             <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
-
-        </div>
-        <?php
-            if($_SESSION['authenticated'] != true){
-                header("Location: index.php");
-            }
-        ?>
+            <button onclick="window.location.href='index.php';">
+              Logout
+            </button>
+        </nav>
         <nav>
             <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z

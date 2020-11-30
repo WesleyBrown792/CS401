@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SESSION['authenticated'] != true){
+    header("Location: index.php");
+}
+
 ?>
 
 <html>
@@ -14,13 +18,10 @@ session_start();
             <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
+            <button onclick="window.location.href='index.php';">
+              Logout
+            </button>
         </nav>
-        <?php
-        //this should be at the top of every page
-            if($_SESSION['authenticated'] != true){
-                header("Location: index.php");
-            }
-        ?>
         <nav>
             <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z

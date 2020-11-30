@@ -1,5 +1,8 @@
 <?php
 session_start();
+if($_SESSION['authenticated'] != true){
+  header("Location: index.php");
+}
 ?>
 
 
@@ -10,16 +13,14 @@ session_start();
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
-        <div>
+        <nav>
             <a href=Home.php>
             <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
             </a>
-        </div>
-        <?php
-            if($_SESSION['authenticated'] != true){
-                header("Location: index.php");
-            }
-        ?>
+            <button onclick="window.location.href='index.php';">
+              Logout
+            </button>
+        </nav>
         <nav>
             <button onclick="window.location.href='B1.php';">
                 Our Website List A-Z
