@@ -7,11 +7,27 @@ div{
 }
 
 ul{
-    background: red;
+    background: grey;
     margin: 5px;
     padding: 5px;
     object-position: center;
     list-style-type: none;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: black;
 }
 
 
