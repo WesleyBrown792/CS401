@@ -25,11 +25,10 @@ if($_SESSION['authenticated'] != true){
       </ul> 
         <div>
             <?php
-              //checks the user access if it is 1 then run
-              // if
-              //renderATable("WebsiteList");
-              //else
-              //renderTable("WebsiteList");
+              if ($_COOKIE['ACCESS']>0)
+                renderATable("WebsiteList");
+              else
+                renderTable("WebsiteList");
             ?>
         </div>
         <footer>

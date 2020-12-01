@@ -25,7 +25,7 @@
             $q->bindParam(":acc",$acc);
             $q->execute();
         }
-
+        
         public function userExists($user, $pass){
             $conn = $this->getConnection();
             $stmt =  $conn->prepare("select * from user where username = :user and password = :pass;");

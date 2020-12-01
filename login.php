@@ -13,8 +13,15 @@ if(preg_match_all($pass, $exp)<6){
 }
 
 if ($dao->userExists($user, $pass)) {
-    $_SESSION['authenticated'] = true;
-    header("Location: Home.php");
+    $res = $dao->userAcc($user);
+    if($user == "admin"){
+        $_SESSION['access'] = 1;
+        $_SESSION['authenticated'] = true;
+        header("Location: Home.php");
+    }else{
+        $_SESSION['authenticated'] = true;
+        header("Location: Home.php");
+    }
 } else {
     $_SESSION['authenticated'] = false;
     header("Location: index.php");

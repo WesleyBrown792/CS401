@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['authenticated'] = false;
+$_SESSION["access"] = -1;
 ?>
 
 <html>
