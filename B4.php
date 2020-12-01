@@ -17,7 +17,7 @@ if($_SESSION['authenticated'] != true){
     <ul>
       <li><a href="Home.php">Home</a></li>
       <li><a href="B1.php">Website List A-Z</a></li>
-      <li><a href="B2.php">Random IP Generator</a></li>
+      <li><a href="B2.php">Visit Random Website</a></li>
       <li><a href="B3.php">About Us</a></li>
       <li><a href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
@@ -59,7 +59,7 @@ if($_SESSION['authenticated'] != true){
         </div>
         <footer>
             <p>Author: Wesley Brown</p>
-            <p>There is no Copy Right</p>
+            <p>Copy Right 2020</p>
           </footer> 
     </body>
 </html>
