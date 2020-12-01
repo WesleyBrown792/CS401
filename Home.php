@@ -13,31 +13,14 @@ if($_SESSION['authenticated'] != true){
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
-        <nav>
-            <a href=Home.php>
-            <img src="HomeButton.jpg" width="150" height="150" alt="To Home page">
-            </a>
-            <button onclick="window.location.href='index.php';">
-              Logout
-            </button>
-        </nav>
-        <nav>
-            <button onclick="window.location.href='B1.php';">
-                Our Website List A-Z
-              </button>
-
-            <button onclick="window.location.href='B2.php';">
-                Random IP Generator
-              </button>
-
-            <button onclick="window.location.href='B3.php';">
-                About Us
-              </button>
-            <button onclick="window.location.href='B4.php';">
-                Leave A Review
-              </button>
-            </nav>
-
+    <ul>
+      <li><a href="Home.php">Home</a></li>
+      <li><a href="B1.php">Website List A-Z</a></li>
+      <li><a href="B2.php">Random IP Generator</a></li>
+      <li><a href="B3.php">About Us</a></li>
+      <li><a href="B4.php">Leave a Review</a></li>
+      <li><a href="index.php">Logout</a></li>
+    </ul>
         <div>
             <div class="center">
                 <h2>Most Recently Reviewed</h2>
