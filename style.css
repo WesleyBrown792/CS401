@@ -8,8 +8,6 @@ div{
 
 ul{
     background: grey;
-    margin: 5px;
-    padding: 5px;
     object-position: center;
     list-style-type: none;
 }
