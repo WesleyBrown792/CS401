@@ -6,7 +6,7 @@ $_SESSION["access"] = -1;
 
 <html>
 <head>
-    <script something></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src = "login.js"></script>
     <title>User Login</title>
     <link rel="stylesheet" teype="text/css" href="login.css"/>

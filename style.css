@@ -6,26 +6,26 @@ div{
     padding: 10px;
 }
 
-ul{
-    background: red;
+.ul{
+    background: rgb(253, 0, 0);
     object-position: center;
     list-style-type: none;
 }
 
-li{
+.li{
   float: left;
 }
 
-li a {
+.li a {
   display: block;
-  color: blue;
+  color: rgb(104, 98, 98);
   text-align: center;
   padding: 4px 6px;
   text-decoration: none;
 }
 
-li a:hover{
-  background-color: green;
+.li a:hover{
+  background-color: black;
 }
 
 
