@@ -6,7 +6,8 @@ $_SESSION["access"] = -1;
 
 <html>
 <head>
-    <script src = "js/logged.js"></script>
+    <script something></script>
+    <script src = "login.js"></script>
     <title>User Login</title>
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>

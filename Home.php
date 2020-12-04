@@ -1,8 +1,6 @@
 <?php
 session_start();
 require_once 'table.php';
-print_r($_SESSION);
-exit();
 if($_SESSION['authenticated'] != true){
     header("Location: index.php");
 }
