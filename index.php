@@ -18,8 +18,8 @@ $_SESSION["access"] = -1;
     //The popup will tell the user to login/make an account to view the website
     <h1>Login</h1>
     <form method="POST" action="login.php">
-        <div>User: <input type="text" name="user" id="user" value="<?php if(isset($_POST['user'])){echo htmlentities($_POST['user'];)}?>"/></div>
-        <div>Password: <input type="password" name="password" id="password" value="<?php if(isset($_POST['password'])){echo htmlentities($_POST['password'];)}?>"/></div>
+        <div>User: <input type="text" name="user" id="user" value="<?php if(isset($_POST['user'])){echo htmlentities($_POST['user']);}?>"/></div>
+        <div>Password: <input type="password" name="password" id="password"/></div>
         <input type="submit" value="Submit">
     </form>
     <a href=Register.php> Click Here If You Don't Already Have An Account</a>

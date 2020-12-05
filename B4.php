@@ -27,6 +27,7 @@ if($_SESSION['authenticated'] != true){
         <div>
         <h2> Submit A New Website Review</h2>
         <?php
+        //I could use the php to check the values less then 10 and if greater return an array
         //I can use js to validte the values for submission
         //also have a popup that says what values failed and if none did then a link back to the home page
         //Need to add for into the lables below
@@ -37,23 +38,23 @@ if($_SESSION['authenticated'] != true){
                 <form method="POST" action="input.php">
                     <div class="form-group">
                         <div><label>Site Name</lable></div>
-                        <input type="text" name="name" class="form-control" value="<?php if(isset($_POST['name'])){echo htmlentities($_POST['name'];)}?>" required >
+                        <input type="text" name="name" class="form-control" value="<?php if(isset($_POST['name'])){echo htmlentities($_POST['name']);}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>Site URL</lable></div>
-                        <input type="text" name="url" class="form-control" value="<?php if(isset($_POST['url'])){echo htmlentities($_POST['url'];)}?>" required >
+                        <input type="text" name="url" class="form-control" value="<?php if(isset($_POST['url'])){echo htmlentities($_POST['url']);}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Functional is the Website</lable></div>
-                        <input type="text" name="func" class="form-control" value="<?php if(isset($_POST['func'])){echo htmlentities($_POST['func'];)}?>" required >
+                        <input type="text" name="func" class="form-control" value="<?php if(isset($_POST['func'])){echo htmlentities($_POST['func']);}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Good is the Website Layout </lable></div>
-                        <input type="text" name="layout" class="form-control" value="<?php if(isset($_POST['layout'])){echo htmlentities($_POST['layout'];)}?>" required >
+                        <input type="text" name="layout" class="form-control" value="<?php if(isset($_POST['layout'])){echo htmlentities($_POST['layout']);}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>Does the Website have Correct/Good Information</lable></div>
-                        <input type="text" name="info" class="form-control" value="<?php if(isset($_POST['info'])){echo htmlentities($_POST['info'];)}?>" required >
+                        <input type="text" name="info" class="form-control" value="<?php if(isset($_POST['info'])){echo htmlentities($_POST['info']);}?>" required >
                     </div>
                     <div>
                       <input type="submit" value="Submit">
