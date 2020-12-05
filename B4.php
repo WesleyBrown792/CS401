@@ -35,7 +35,7 @@ if($_SESSION['authenticated'] != true){
         //in the event of multiple errors they will need to know what they all are at once
         //add a custom webfont
         ?>
-                <form method="POST" action="input.php">
+                <form name="addSite" method="POST" action="input.php">
                     <div class="form-group">
                         <div><label>Site Name</lable></div>
                         <input type="text" name="name" class="form-control" value="<?php if(isset($_POST['name'])){echo htmlentities($_POST['name']);}?>" required >
