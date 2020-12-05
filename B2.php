@@ -4,7 +4,8 @@ require_once 'rand.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
-$web= 0;
+$web= -2000;
+$pageName = "B2";
 ?>
 
 

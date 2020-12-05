@@ -4,7 +4,7 @@ require_once 'table.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
-//if they have type one clearance let them see the delete X from the php video
+$pageName = "B1";
 ?>
 
 

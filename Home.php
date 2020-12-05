@@ -4,6 +4,7 @@ require_once 'table.php';
 if($_SESSION['authenticated'] != true){
     header("Location: index.php");
 }
+$pageName = "Home";
 ?>
 
 <html>

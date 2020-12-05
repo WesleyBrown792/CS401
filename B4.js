@@ -60,7 +60,6 @@
 }); */
 
 $(function(){
-
     $("#web_review").submit(function(e){//when submit is click
         e.preventDefault();//dont reload page
         var values = $("#web_review").serialize();//collect form info
