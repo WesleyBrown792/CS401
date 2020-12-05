@@ -19,15 +19,15 @@ if(strlen($url) > 256 ){
     echo "Your website URL was too long, most general page urls should not be too long";
     $valid++;
 }
-if($func > 10 ){
+if($info <= 10 || $info >= 0 || is_Numeric($info)){
     echo "Your Functionality score is too high";
     $valid++;
 }
-if($info > 10 ){
+if($info <= 10 || $info >= 0 || is_Numeric($info)){
     echo "Your Information score is too high";
     $valid++;
 }
-if($layout > 10 ){
+if($info <= 10 || $info >= 0 || is_Numeric($info)){
     echo "Your Layout score is too high";
     $valid++;
 }

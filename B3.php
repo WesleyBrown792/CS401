@@ -22,6 +22,7 @@ if($_SESSION['authenticated'] != true){
       <li><a href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
     </ul>
+    <br>
         <div>
             This website was originally made to help people find new and interesting websites.
             Since then I have thought more about what I would like this site to be and do and have added some functionality to some parts of the site.
