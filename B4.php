@@ -8,8 +8,10 @@ if($_SESSION['authenticated'] != true){
 
 <html>
     <header>
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="B4.js"></script>
         <title>Leave Review</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
         <link rel='shortcut icon' type='image/png' href='favicon.png'/>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>

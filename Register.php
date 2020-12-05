@@ -6,6 +6,7 @@ $taken = false
 <html>
 <head>
     <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 

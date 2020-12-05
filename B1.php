@@ -4,13 +4,14 @@ require_once 'table.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
-//if they have type one clearance let them see the delete X from the php slides
+//if they have type one clearance let them see the delete X from the php video
 ?>
 
 
 <html>
     <header>
         <title>Our Website List A-Z</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
         <link rel='shortcut icon' type='image/png' href='favicon.png'/>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
@@ -25,7 +26,7 @@ if($_SESSION['authenticated'] != true){
       </ul> 
         <div>
             <?php
-              if ($_COOKIE['ACCESS']>0)
+              if ($_SESSION['access']>0)
                 renderATable("WebsiteList");
               else
                 renderTable("WebsiteList");

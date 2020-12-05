@@ -7,7 +7,7 @@ div{
 }
 
 .ul{
-    background: rgb(253, 0, 0);
+    background-color: #333; 
     object-position: center;
     list-style-type: none;
 }
@@ -18,14 +18,14 @@ div{
 
 .li a {
   display: block;
-  color: rgb(104, 98, 98);
+  color: white;
   text-align: center;
   padding: 4px 6px;
   text-decoration: none;
 }
 
 .li a:hover{
-  background-color: black;
+  background-color: grey;
 }
 
 

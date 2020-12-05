@@ -27,6 +27,32 @@ function renderTable($tablename){
     ?>
 
 <?php
+function renderATable($tablename){
+    $dao = new Dao();
+    $websites = $dao->getWebsites();
+    if(count($websites)==0){
+        echo "No Websites yet";
+        exit;
+    }
+    ?>
+    <table>
+        <thead>
+            <th>URL</th><th>Score</th>
+        </thead>
+        <?php
+            $holder = 1;
+            foreach($websites as $websites){
+                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
+                $holder++;
+            }
+        ?>
+        </table>
+   <?php
+    }
+    ?>
+
+
+<?php
 function renderWorst(){
     $dao = new Dao();
     $websites = $dao->getWorst();
