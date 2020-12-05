@@ -15,11 +15,11 @@ if($_SESSION['authenticated'] != true){
     </header>
     <body>
     <ul>
-      <li><a href="Home.php">Home</a></li>
-      <li><a href="B1.php">Website List A-Z</a></li>
-      <li><a href="B2.php">Visit Random Website</a></li>
-      <li><a href="B3.php">About Us</a></li>
-      <li><a href="B4.php">Leave a Review</a></li>
+      <li><a <?php if ($pageName == "Home") { echo "class='active';"; } ?> href="Home.php">Home</a></li>
+      <li><a <?php if ($pageName == "B1") { echo "class='active';"; } ?> href="B1.php">Website List A-Z</a></li>
+      <li><a <?php if ($pageName == "B2") { echo "class='active';"; } ?> href="B2.php">Visit Random Website</a></li>
+      <li><a <?php if ($pageName == "B3") { echo "class='active';"; } ?> href="B3.php">About Us</a></li>
+      <li><a <?php if ($pageName == "B4") { echo "class='active';"; } ?> href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
     </ul>
     <br>

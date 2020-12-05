@@ -10,8 +10,13 @@ $_POST["user"] = "";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src = "login.js"></script>
     <title>User Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans"rel="stylesheet" type="text/css"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+        header > h1{
+            
+        }
+    </style> 
     <link rel="stylesheet" teype="text/css" href="login.css"/>
 </head>
 
