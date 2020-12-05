@@ -14,6 +14,7 @@ if($_SESSION['authenticated'] != true){
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
+    <div>    
     <ul>
       <li><a <?php if ($pageName == "Home") { echo "class='active';"; } ?> href="Home.php">Home</a></li>
       <li><a <?php if ($pageName == "B1") { echo "class='active';"; } ?> href="B1.php">Website List A-Z</a></li>
@@ -22,7 +23,7 @@ if($_SESSION['authenticated'] != true){
       <li><a <?php if ($pageName == "B4") { echo "class='active';"; } ?> href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
     </ul>
-    <br>
+    </div>
         <div>
             This website was originally made to help people find new and interesting websites.
             Since then I have thought more about what I would like this site to be and do and have added some functionality to some parts of the site.

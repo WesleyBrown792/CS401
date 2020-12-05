@@ -59,7 +59,7 @@ function renderWorst(){
     ?>
     <table>
         <thead>
-            <th>#</th><th>URL</th><th>Score</th>
+            <th>URL</th><th>Score</th>
         </thead>
         <?php
             $holder;
@@ -95,7 +95,7 @@ function renderBest(){
     ?>
     <table>
         <thead>
-        <th>#</th><th>URL</th><th>Score</th>
+        <th>URL</th><th>Score</th>
         </thead>
         <?php
             $holder;
@@ -131,7 +131,7 @@ function renderTime(){
     ?>
     <table>
         <thead>
-        <th>#</th><th>URL</th><th>Score</th>
+        <th>URL</th><th>Score</th>
         </thead>
         <?php
             $holder=1;

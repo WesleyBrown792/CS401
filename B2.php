@@ -4,6 +4,7 @@ require_once 'rand.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
+$web= 0;
 ?>
 
 
@@ -15,6 +16,7 @@ if($_SESSION['authenticated'] != true){
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
     <body>
+    <div>
     <ul>
       <li><a <?php if ($pageName == "Home") { echo "class='active';"; } ?> href="Home.php">Home</a></li>
       <li><a <?php if ($pageName == "B1") { echo "class='active';"; } ?> href="B1.php">Website List A-Z</a></li>
@@ -23,13 +25,18 @@ if($_SESSION['authenticated'] != true){
       <li><a <?php if ($pageName == "B4") { echo "class='active';"; } ?> href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
     </ul>
+    </div>
         <div>
             <div> 
+            <button onclick="window.location.href=https://therandombutton.github.io/">
+                    Visit Random Site Generator
+                  </button>
                 <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
             </div>
             <div>
               <?php
-                $web = getRandom();
+
+                echo $web;
                 ?>
             <button onclick="window.location.href=<?php echo $web?>">
                     Visit Random URL

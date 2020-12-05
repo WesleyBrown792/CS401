@@ -1,7 +1,6 @@
 <?php
 require_once 'Dao.php';
-?>
-<?php
+
 function getRandom(){
     $dao = new Dao();
     $websites = $dao->getWebsites();
@@ -15,6 +14,6 @@ function getRandom(){
         $x++;
     }
     
-    return $bigarray[rand(0,$x)];
+    return rand(0,$x);
     }
 ?>
