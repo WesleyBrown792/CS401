@@ -37,23 +37,23 @@ if($_SESSION['authenticated'] != true){
                 <form method="POST" action="input.php">
                     <div class="form-group">
                         <div><label>Site Name</lable></div>
-                        <input type="text" name="name" class="form-control" required >
+                        <input type="text" name="name" class="form-control" value="<?php if(isset($_POST['name'])){echo htmlentities($_POST['name'];)}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>Site URL</lable></div>
-                        <input type="text" name="url" class="form-control" required >
+                        <input type="text" name="url" class="form-control" value="<?php if(isset($_POST['url'])){echo htmlentities($_POST['url'];)}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Functional is the Website</lable></div>
-                        <input type="text" name="func" class="form-control" required >
+                        <input type="text" name="func" class="form-control" value="<?php if(isset($_POST['func'])){echo htmlentities($_POST['func'];)}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>How Good is the Website Layout </lable></div>
-                        <input type="text" name="layout" class="form-control" required >
+                        <input type="text" name="layout" class="form-control" value="<?php if(isset($_POST['layout'])){echo htmlentities($_POST['layout'];)}?>" required >
                     </div>
                     <div class="form-group">
                         <div><label>Does the Website have Correct/Good Information</lable></div>
-                        <input type="text" name="info" class="form-control" required >
+                        <input type="text" name="info" class="form-control" value="<?php if(isset($_POST['info'])){echo htmlentities($_POST['info'];)}?>" required >
                     </div>
                     <div>
                       <input type="submit" value="Submit">
