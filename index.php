@@ -14,9 +14,10 @@ $_SESSION["access"] = -1;
 </head>
 
 <body>
-    //here it will generate a popup on loading the page
-    //The popup will tell the user to login/make an account to view the website
     <h1>Login</h1>
+    <?php
+    echo $_POST['user'];
+    ?>
     <form method="POST" action="login.php">
         <div>User: <input type="text" name="user" id="user" value="<?php if(isset($_POST['user'])){echo htmlentities($_POST['user']);}?>"/></div>
         <div>Password: <input type="password" name="password" id="password"/></div>
