@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
     });
 });
+
+$(function(){
+    $("#sampleUserUnfoForm").validate({
+        
+    });
+});
