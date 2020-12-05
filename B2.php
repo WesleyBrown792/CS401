@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'rand.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
@@ -8,7 +9,7 @@ if($_SESSION['authenticated'] != true){
 
 <html>
     <header>
-        <title>Random IP Generator</title>
+        <title>Random Website Finder</title>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
         <link rel='shortcut icon' type='image/png' href='favicon.png'/>
         <link rel="stylesheet" type="text/css" href="style.css" />
@@ -24,19 +25,14 @@ if($_SESSION['authenticated'] != true){
     </ul>
         <div>
             <div>
-                <?php
-                  $randIP = mt_rand(0, 255) . "." . mt_rand(0, 255) . "." . mt_rand(0, 255) . "." . mt_rand(0, 255);
-                  echo ($randIP);
+                <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
+            </div>
+            <div>
+              <?php
+                $web = getRandom();
                 ?>
-            </div>
-            <div>
-                <button onclick="window.location.href='B2.php'">
-                    Generate Random IP
-                  </button>
-            </div>
-            <div>
-            <button onclick="window.location.href='$randIP'">
-                    Visit Random IP
+            <button onclick="window.location.href=<?php echo $web?>">
+                    Visit Random URL
                   </button>
             </div>
         </div>

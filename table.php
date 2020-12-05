@@ -17,7 +17,7 @@ function renderTable($tablename){
         <?php
             $holder = 1;
             foreach($websites as $websites){
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
+                echo "<tr><td>" . ($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
                 $holder++;
             }
         ?>
@@ -42,7 +42,7 @@ function renderATable($tablename){
         <?php
             $holder = 1;
             foreach($websites as $websites){
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
+                echo "<tr><td>" . ($holder['#']) . "</td><td>" . htmlspecialchars($websites['URL']) . "</td><td>" . htmlspecialchars($websites['totalS']) . "</td></tr>";
                 $holder++;
             }
         ?>
@@ -76,7 +76,7 @@ function renderWorst(){
             $y = count($bigarray)-1;
             for ($holder=1;$y>=$x-4; $y--) {
                 $value = $bigarray[$y];
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";
+                echo "<tr><td>" . ($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";
                 $holder++;
                 if($y<=0){
                     $y=$x-4;
@@ -112,7 +112,7 @@ function renderBest(){
             $y = count($bigarray)-1;
             for ($holder=1;$y>=$x-4; $y--) {
                 $value = $bigarray[$y];
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";                $holder++;
+                echo "<tr><td>" . ($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";                $holder++;
                 if($y<=0){
                     $y=$x-4;
                 }
@@ -147,7 +147,7 @@ function renderTime(){
             $y = count($bigarray)-1;
             for ($holder=1;$y>=$x-4; $y--) {
                 $value = $bigarray[$y];
-                echo "<tr><td>" . htmlspecialchars($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";                $holder++;
+                echo "<tr><td>" . ($holder['#']) . "</td><td>" . htmlspecialchars($value['URL']) . "</td><td>" . htmlspecialchars($value['totalS']) . "</td></tr>";                $holder++;
                 if($y<=0){
                     $y=$x-4;
                 }
