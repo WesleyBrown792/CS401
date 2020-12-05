@@ -1,3 +1,3 @@
-$(window).load(function(){
-    alert("Please make sure that you are logged in to use this website.")
+window.addEventListener('load', (event) => {
+    alert("You must be logged in to view this website");
 });
