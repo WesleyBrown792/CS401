@@ -8,13 +8,13 @@ function getRandom(){
     if(count($websites)==0){
         return "https://www.google.com/";
     }
-    $bigarray
-    $x;
+    $bigarray = array();
+    $x=0;
     foreach ($websites as $websites) {
         $bigarray[$x] = $websites['URL']; 
         $x++;
     }
     
-    return $bigaray[rand(0,$x)];
-
+    return $bigarray[rand(0,$x)];
+    }
 ?>

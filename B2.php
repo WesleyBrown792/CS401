@@ -10,7 +10,7 @@ if($_SESSION['authenticated'] != true){
 <html>
     <header>
         <title>Random Website Finder</title>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" type="text/css"> 
         <link rel='shortcut icon' type='image/png' href='favicon.png'/>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </header>
