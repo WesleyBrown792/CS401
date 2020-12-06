@@ -14,6 +14,11 @@ function getRandom(){
         $x++;
     }
     
-    return rand(0,$x);
+    print_r($bigarray);
+    exit();
+
+
+
+    return $bigarray[rand(0,$x)];
     }
 ?>

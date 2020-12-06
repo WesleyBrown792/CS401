@@ -4,7 +4,6 @@ require_once 'rand.php';
 if($_SESSION['authenticated'] != true){
   header("Location: index.php");
 }
-$web= -2000;
 $pageName = "B2";
 ?>
 
@@ -29,19 +28,7 @@ $pageName = "B2";
     </div>
         <div>
             <div> 
-            <button onclick="window.location.href=https://therandombutton.github.io/">
-                    Visit Random Site Generator
-                  </button>
-                <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
-            </div>
-            <div>
-              <?php
-
-                echo $web;
-                ?>
-            <button onclick="window.location.href=<?php echo $web?>">
-                    Visit Random URL
-                  </button>
+              <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
             </div>
         </div>
         <footer>

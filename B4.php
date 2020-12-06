@@ -41,27 +41,27 @@ $pageName = "B4";
                 <form name="addSite" id="web_review" enctype="multipart/form-data">
                     <div>
                         <div><label for="name">Site Name</lable></div>
-                        <input type="text" id="name" name="name" class="form-control" value="<?php if(isset($_POST['name'])){echo htmlentities($_POST['name']);}?>">
+                        <input type="text" id="name" name="name" class="form-control" value="<?php if(isset($_SESSION['name'])){echo ($_SESSION['name']);}?>">
                         <!--<span class="help1" style="color: red;">Name must be larger than 1 and less than 256</span>-->
                     </div>
                     <div>
                         <div><label for="url">Site URL</lable></div>
-                        <input type="text" id="url" name="url" class="form-control" value="<?php if(isset($_POST['url'])){echo htmlentities($_POST['url']);}?>">
+                        <input type="text" id="url" name="url" class="form-control" value="<?php if(isset($_SESSION['url'])){echo ($_SESSION['url']);}?>">
                         <!--<span class="help2" style="color: red;">URL must be larger than 10 and less than 256</span>-->
                     </div>
                     <div>
                         <div><label for="func_score">How Functional is the Website</lable></div>
-                        <input type="text" id="func" name="func" class="form-control" value="<?php if(isset($_POST['func'])){echo htmlentities($_POST['func']);}?>">
+                        <input type="text" id="func" name="func" class="form-control" value="<?php if(isset($_SESSION['func'])){echo ($_SESSION['func']);}?>">
                         <!--<span class="help3" style="color: red;">This value must be between 0-10</span>-->
                     </div>
                     <div>
                         <div><label for="layout_score">How Good is the Website Layout </lable></div>
-                        <input type="text" id="layout" name="layout" class="form-control" value="<?php if(isset($_POST['layout'])){echo htmlentities($_POST['layout']);}?>">
+                        <input type="text" id="layout" name="layout" class="form-control" value="<?php if(isset($_SESSION['layout'])){echo ($_SESSION['layout']);}?>">
                         <!--<span class="help4" style="color: red;">This value must be between 0-10</span>-->
                     </div>
                     <div>
                         <div><label for="info_score">Does the Website have Correct/Good Information</lable></div>
-                        <input type="text" id="info"name="info" class="form-control" value="<?php if(isset($_POST['info'])){echo htmlentities($_POST['info']);}?>">
+                        <input type="text" id="info"name="info" class="form-control" value="<?php if(isset($_SESSION['info'])){echo ($_SESSION['info']);}?>">
                         <!--<span class="help5" style="color: red;">This value must be between 0-10</span>-->
                     </div>
                     <div>

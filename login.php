@@ -16,5 +16,6 @@ if ($dao->userExists($user, $pass)) {
     }
 } else {
     $_SESSION['authenticated'] = false;
+    $_SESSION['user'] = $user;
     header("Location: index.php");
 }

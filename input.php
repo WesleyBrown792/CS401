@@ -11,6 +11,16 @@ $info = $_POST['info'];
 $total = ($info + $func + $layout)/3;
 $valid=0;
 
+$_SESSION['name'] = $name;
+$_SESSION['url'] = $url;
+$_SESSION['func'] = $func;
+$_SESSION['layout'] = $layout;
+$_SESSION['info'] = $info;
+
+
+
+
+
 if(strlen($name) > 256 ){
     echo "Your website name was too long";
     $valid++;
