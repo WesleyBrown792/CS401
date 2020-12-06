@@ -53,6 +53,11 @@ if($valid > 0){
     header('Location: B4.php');
 }else{
     $dao->addwebsite($name, $url, $total, $func, $layout, $info, 0);
+    $_SESSION['name']='';
+    $_SESSION['url']='';
+    $_SESSION['func']='';
+    $_SESSION['info']='';
+    $_SESSION['layout']='';
 
     header('Location:Home.php');  
 }
