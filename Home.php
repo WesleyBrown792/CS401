@@ -25,26 +25,33 @@ $pageName = "Home";
       <li><a href="index.php">Logout</a></li>
     </ul>
     </div>
-        <div>
-            <div class="center">
+        <div id='page-container'>
+            <div >
+            
                 <h2>Most Recently Reviewed</h2>
+                <div class='center'>
                 <?php
                 renderTime();
                 ?>
+                </div>
             </div>
              
-            <div class="center">
+            <div>
                 <h2>Best Sites</h2>
+                <div class='center'>
                 <?php
                 renderBest();
                 ?>
+                </div>
             </div>
 
-            <div class="center">
+            <div>
                 <h2>Worst Sites</h2>
+                <div class='center'>
                 <?php
                  renderWorst();
                  ?>
+                 </div>
             </div>
         
         </div>

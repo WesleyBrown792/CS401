@@ -15,7 +15,7 @@ $_SESSION["access"] = -1;
 <body>
     <h1>Login</h1>
     <form method="POST" action="login.php">
-        <div><label for="user">User: </label><input type="text" name="user" id="user" value="<?php if(isset($_SESSION['user'])){echo htmlentities($_POST['user']);}?>"/></div>
+        <div><label for="user">User: </label><input type="text" name="user" id="user" value="<?php if(isset($_SESSION['user'])){echo htmlentities($_SESSION['user']);}?>"/></div>
         <div><label for="password">Password: </label><input type="password" name="password" id="password"/></div>
         <input type="submit" value="Submit">
     </form>

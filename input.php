@@ -18,10 +18,10 @@ $_SESSION['layout'] = $layout;
 $_SESSION['info'] = $info;
 
 
+$dao->addwebsite($name, $url, $total, $func, $layout, $info, 0);
 
 
-
-if(strlen($name) > 256 ){
+/* if(strlen($name) > 256 ){
     echo "Your website name was too long";
     $valid++;
 }
@@ -50,15 +50,12 @@ if(!is_link($url)){
 
 if($valid > 0){
     echo"Please fix any errors with your Scores, Name, or URL";
-    header('Location: B4.php');
 }else{
     $dao->addwebsite($name, $url, $total, $func, $layout, $info, 0);
     $_SESSION['name']='';
     $_SESSION['url']='';
     $_SESSION['func']='';
     $_SESSION['info']='';
-    $_SESSION['layout']='';
-
-    header('Location:Home.php');  
-}
+    $_SESSION['layout']='';  
+} */
 exit();

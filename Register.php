@@ -14,7 +14,6 @@ $taken = false
 
 <body>
     <h1>Register Here</h1>
-    <input type="submit" value="thing" name="thing" id="thing">
 
     <form method="POST" action="registration.php">
         <div>User: <input type="text" name="user" id="user"/></div>

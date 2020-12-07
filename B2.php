@@ -25,8 +25,9 @@ $pageName = "B2";
       <li><a <?php if ($pageName == "B4") { echo "class='active';"; } ?> href="B4.php">Leave a Review</a></li>
       <li><a href="index.php">Logout</a></li>
     </ul>
-    </div>
+</div>
         <div>
+          <h2></h2>
             <div> 
               <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
             </div>

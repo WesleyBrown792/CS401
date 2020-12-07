@@ -1,5 +1,7 @@
 body{
     text-align: center;
+    font-family: "Work Sans", sans-serif;
+
 }
 
 div{
@@ -7,9 +9,9 @@ div{
 }
 /* there should be a way to make boxes around each portion and change the color around current portions*/
 ul{
+    position: fixed;
     background-color: black; 
     object-position: center;
-    position: absolute;
     width: 100%;
     list-style-type: none;
     color: black;
@@ -34,15 +36,12 @@ li a:hover{
 
 
 #page-container {
-    position: relative;
-    min-height: 100vh;
+  margin-top: 10%;
+  /* position: absolute; */
 }
+
   
-#content-wrap {
-    padding-bottom: 3px;    /* Footer height */
-}
-  
-#footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -51,8 +50,9 @@ li a:hover{
 
 table{
     width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     object-position: center;
-    position: center;
 }
 
 table, th, td{
@@ -70,12 +70,13 @@ td{
     margin-top: 15px;
 }
 
-#center{
-    margin-left: auto;
-    margin-right: auto;
-}
+/* .center{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin: 0 auto;
+} */
 
-#active{
+.active{
   background-color: white;
   color: black;
 }

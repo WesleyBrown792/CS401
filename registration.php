@@ -13,13 +13,17 @@ if(strlen($user) > 256){
     echo "Username is too long";
 }
 
+$salt = "totalyrandomjunkyouknow";
+$newpass = hash('sha256',$pass.$salt);
 
 
-if ($dao->userExists($user, $pass)) {
+
+if ($dao->userExists($user, $newpass)) {
     header("Location: Register.php");
 } else {
     $_SESSION['authenticated'] = true;
-    $dao->addUser($user, $pass, 0);
+    
+    $dao->addUser($user, $newpass, 0);
     header("Location: Home.php");
     exit();
 }

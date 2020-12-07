@@ -26,7 +26,7 @@ $pageName = "B1";
       <li><a href="index.php">Logout</a></li>
     </ul>
     </div> 
-        <div>
+        <div id='page-container'>
             <?php
               if ($_SESSION['access']>0)
                 renderATable("WebsiteList");

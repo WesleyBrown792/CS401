@@ -69,34 +69,36 @@ $(function(){
         var func = $("#func").val();
         var layout = $("#layout").val();
         var info = $("#info").val();
+        console.log(name + url + func + layout + info);
 
         if(name === "" || name.length > 256 || name.length <1){
-            errors.concat("Name must be longer than 1 character and less than 256 \n")
+            errors+= "Name must be longer than 1 character and less than 256 \n";
         }
         if(url === "" || url.length > 256 || url.length <9){
-            errors.concat("URL must be longer than 9 characters and less than 256 \n")
+            errors+="URL must be longer than 9 characters and less than 256 \n";
         }
-        if(func>10||func<0||!isNaN(func)){
-            issues.concat("You must enter a number between 0 and 10 for function \n");
+        if(isNaN(func)||func>10||func<0){
+            errors+="You must enter a number between 0 and 10 for function \n";
         }
-        if(layout>10||layout<0||!isNaN(layout)){
-            issues.concat("You must enter a number between 0 and 10 for layout \n");
+        if(isNaN(layout)||layout>10||layout<0){
+            errors+="You must enter a number between 0 and 10 for layout \n";
         }
-        if(info>10||info<0||!isNaN(info)){
-            issues.concat("You must enter a number between 0 and 10 for info \n");
+        if(isNaN(info)||info>10||info<0){
+            errors+="You must enter a number between 0 and 10 for info \n";
         }
         
+        console.log(errors);
 
         if(errors.length<1){
-            $.ajaz({//ajax calls php
+            $.ajax({//ajax calls php
                 type: "POST",
                 url: "input.php",
                 data: values,
                 success: function(){
-                    alert("win");
+                    window.location = "Home.php"
                 },
                 error: function(){
-                    alert("lose");
+                    alert("Something Went Wrong");
                 }
             });
         }else{
