@@ -34,9 +34,11 @@ $pageName = "B1";
                 renderTable("WebsiteList");
             ?>
         </div>
+        <div>
         <footer>
-          <p>Author: Wesley Brown</p>
-          <p>Copy Right 2020</p>
-        </footer> 
+            <p>Author: Wesley Brown</p>
+            <p>Copy Right 2020</p>
+          </footer>
+          </div>
     </body>
 </html>

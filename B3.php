@@ -36,9 +36,11 @@ $pageName = "B3";
             I am looking forward to what happens with this website and how it grows and evolves.
             </pre>
         </div>
+        <div>
         <footer>
             <p>Author: Wesley Brown</p>
             <p>Copy Right 2020</p>
-          </footer> 
+          </footer>
+          </div>
     </body>
 </html>

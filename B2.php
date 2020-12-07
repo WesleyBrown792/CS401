@@ -32,9 +32,11 @@ $pageName = "B2";
               <a href = "https://therandombutton.github.io/">Visit a Randomizor Button</a>
             </div>
         </div>
+        <div>
         <footer>
             <p>Author: Wesley Brown</p>
             <p>Copy Right 2020</p>
-          </footer> 
+          </footer>
+          </div>
     </body>
 </html>
